@@ -57,4 +57,5 @@ Make sure you have Node.js v8+ installed.
 
 For your convenience this repository also includes a `docker-compose.yaml` file, which has a mongodb server wired up to the app. `docker-compose up -d` runs in `prestart` hook before `npm start`. If you want to use your own DB setup instead, just delete `prestart` webhook from `package.json`.
 
-Run `npm start` in the root folder of the project to start the development.
+~~Run `npm start` in the root folder of the project to start the development.~~
+Run `npm run docker-start` in the root folder of the project to start the development.
