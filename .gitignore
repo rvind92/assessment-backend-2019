@@ -77,3 +77,6 @@ typings/
 # Editor/IDE configuration
 .idea
 .vscode
+
+# Package lock
+package-lock.json

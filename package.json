@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "src/server.js",
   "scripts": {
-    "prestart": "docker-compose up -d",
+    "docker-start": "docker-compose up",
     "start": "nodemon src/server.js",
     "test": "jest"
   },
@@ -14,11 +14,10 @@
     "express": "^4.17.1",
     "graphql": "^14.3.1",
     "js-yaml": "^3.13.1",
-    "mongoose": "^5.5.11",
-    "nodemon": "^1.19.1",
-    "qs-middleware": "^1.0.3"
+    "mongoose": "^5.5.11"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
   }
 }

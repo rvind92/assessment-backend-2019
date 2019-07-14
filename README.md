@@ -13,15 +13,15 @@ When you are done with the test, please send a link to your repo to your recruit
 
 Using the boilerplate in this repo, expose a GraphQL interface with the following features:
 
-- Raise (create) an incident and assign it to a user with an `Engineer` role
-- Assign the incident to a user
-- Acknowledge the incident
-- Resolve the incident
-- Read details about a certain incident
-- Delete an incident
-- Index all incidents in the system
-  - This includes filtering by fields, sorting by the date of creation and update and pagination
-  
+- [x] Raise (create) an incident and assign it to a user with an `Engineer` role
+- [x] Assign the incident to a user
+- [x] Acknowledge the incident
+- [x] Resolve the incident
+- [x] Read details about a certain incident
+- [x] Delete an incident
+- [] Index all incidents in the system (not sure if I get this since I am not allowed to touch the mongoose models for indexing)
+  - [] This includes filtering by fields, sorting by the date of creation and update and pagination (I have only done sorting/filtering by assignee and dates, did not accomplish pagination)
+
 `Incident` and `User` models are defined for your convenience. There is no need to wire up the user management system.
 
 ## Evaluation
@@ -30,9 +30,9 @@ You should spend no more than **4 hours** on this test assignment.
 
 Before you submit the link to your fork with a complete assignment, please make sure your repo contains:
 
-- The code for exposing the GraphQL interface
-- A Dockerfile with the code necessary to run your app as a docker container (currently empty)
-- Edited `docker-compose.yaml` that includes the reference to your app's docker image along with `mongo`
+- [x] The code for exposing the GraphQL interface
+- [x] A Dockerfile with the code necessary to run your app as a docker container (currently empty)
+- [x] Edited `docker-compose.yaml` that includes the reference to your app's docker image along with `mongo`
 
 You are allowed to:
 
@@ -49,7 +49,7 @@ We will judge your work based on following criteria:
 - Amount of boilerplate code
 - Usage of new language and framework features to reduce the amount of code written
 - Presence of code tests (not required, but is still a big bonus)
-- Edge cases coverage (e.g. no user with an Engineer role in the DB)
+- Edge cases coverage (e.g. no user with an Engineer role in the DB) (I do not quite understand the no user with an Engineer role in the DB, I have assumed that you cannot re-assign an user with the Engineer role to incidents)
 
 ## Start the development
 
